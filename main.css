@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+.recital {
+  text-indent: 20px;
+}
+
+.block-table {
+  text-align: center;
+}
+
+.tabl {
+  text-align: left;
+  display: inline-table;
+  border: 4px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid #0000d3;
+}
+
+.tabl .tabl-title.row .cell {
+  background-color: #ffd300;
+  font-weight: bold;
+}
+
+.tabl .row {
+  display: table-row;
+}
+
+.tabl .row:nth-child(even){
+  background: #c6c6c6;
+}
+
+.tabl .cell {
+  display: table-cell;
+  border: 1px solid gray;
+  padding: 4px 6px;
+  vertical-align: middle;
+}
+
