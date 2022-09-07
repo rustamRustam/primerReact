@@ -1,0 +1,17 @@
+.component-Button {
+  .button-add {
+    color: white;
+    background-color: #cc181e;
+    &:hover {
+      background-color: #e62117;
+    }
+  }
+
+  .button-remove {
+    background-color: #ffd426;
+    &:hover {
+      background-color: #eac324;
+    }
+  }
+
+}

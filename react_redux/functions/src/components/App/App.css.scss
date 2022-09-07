@@ -1,0 +1,29 @@
+.container-header {
+  position: relative;
+  background-color: #fff;
+  text-align: right;
+  padding: 10px;
+
+  border-bottom: 1px solid #e2e2e2;
+
+  .tema-sun {
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .tema-sun:hover {
+    cursor: pointer;
+  }
+
+  .tema:after {
+    content:'';
+    display:table;
+    clear:both;
+  }
+
+}
+
+.container-App {
+  text-align: center;
+}
