@@ -1,0 +1,28 @@
+.pagination,
+.filters {
+    margin: 10px 0;
+}
+
+.filters {
+    display: block;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.filters>div {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+    /*width: calc(25% - 24px);*/
+    width: calc(33% - 24px);
+}
+
+@media screen and (max-width: 560px) {
+    .filters>div {
+        display: block;
+        width: auto;
+    }
+}

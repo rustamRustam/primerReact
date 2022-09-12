@@ -1,0 +1,24 @@
+.container-Opisanie {
+  box-sizing: border-box;
+  background-color: #808080cf;
+  width: 100%;
+  text-align: left;
+  padding: 8px 10px;
+
+  .opisanie-data {
+    margin-top: 4px;
+    display: table;
+  }
+
+  .opisanie-title-info {
+    display: table-row;
+  }
+
+  .opisanie-title-info div {
+    display: table-cell;
+  }
+
+  .left-space {
+    border-left: 0.2em solid transparent;
+  }
+}

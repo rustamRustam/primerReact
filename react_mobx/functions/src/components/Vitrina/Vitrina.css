@@ -1,0 +1,17 @@
+.container-Vitrina {
+  min-width: 100%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .container-Vitrina {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container-Vitrina {
+    grid-template-columns: 1fr;
+  }
+}
