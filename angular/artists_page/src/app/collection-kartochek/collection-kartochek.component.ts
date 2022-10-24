@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import Kartochki, { TDataKartochkas, TKartochka, TKeyFilters, TValueFilters } from '../store/Kartochki';
+import { TKartochka } from '../store/kartochki.service';
 
 import { CollectionService } from '../store/collection.service';
 
@@ -14,8 +14,9 @@ export class CollectionKartochekComponent implements OnInit {
   dataKartochkas: TKartochka[] = [];
   dataTotalCount: number = 0;
 
-  constructor(private collection: CollectionService) {
-  }
+  constructor(
+    private collection: CollectionService
+  ) {  }
 
   ngOnInit(): void {
     this.collection.updateDataKartochkas.subscribe(_dataKartochkas => {

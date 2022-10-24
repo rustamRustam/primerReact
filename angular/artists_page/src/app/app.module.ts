@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule }   from '@angular/common/http';
 
 import { CollectionService } from './store/collection.service';
+import { LoaderService } from './store/loader.service';
+import { AuthorsService } from './store/authors.service';
+import { LocationsService } from './store/locations.service';
+import { KartochkiService } from './store/kartochki.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,10 +42,14 @@ import { ButtonComponent, ButtonAddRemove, ButtonClear } from './button/button.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
-    CollectionService
+    CollectionService,
+    LoaderService,
+    AuthorsService,
+    KartochkiService
   ],
   bootstrap: [
     AppComponent

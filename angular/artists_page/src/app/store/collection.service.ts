@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core'
 import { Subject } from 'rxjs';
 
-import { TKartochka } from './Kartochki';
+import { TKartochka } from './kartochki.service';
 
 @Injectable({
   providedIn: 'root'

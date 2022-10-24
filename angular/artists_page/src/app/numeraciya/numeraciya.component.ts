@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { TUpdateFilter } from '../store/Kartochki';
+import { TUpdateFilter } from '../store/kartochki.service';
 
 export type TNumeraciya = {
   currentPage:number;

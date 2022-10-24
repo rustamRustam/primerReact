@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { TUpdateFilter } from '../store/Kartochki';
+import { TUpdateFilter } from '../store/kartochki.service';
 
 @Component({
   selector: 'app-name',

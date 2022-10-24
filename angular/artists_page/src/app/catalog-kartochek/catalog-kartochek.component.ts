@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-import Kartochki, {
+import {
+  KartochkiService,
   TDataKartochkas,
   TKartochka,
   TFilters,
   TKeyFilters,
   TValueFilters
-} from '../store/Kartochki';
-import Authors, {TDataAuthors, TAuthor} from '../store/Authors';
-import Locations, {TDataLocations, TLocation} from '../store/Locations';
+} from '../store/kartochki.service';
+import { AuthorsService, TDataAuthors, TAuthor } from '../store/authors.service';
+import { LocationsService, TDataLocations, TLocation } from '../store/locations.service';
 
 import { TNumeraciya } from '../numeraciya/numeraciya.component';
 import { TSelectItem, TSelectItems } from '../select/select.component';
@@ -61,7 +62,7 @@ export class CatalogKartochekComponent implements OnInit {
   }
 
   updateFilter(_name: TKeyFilters, _value: TValueFilters ):boolean {
-    if (Kartochki.updateFilter(_name, _value) ) {
+    if (this.kartochki.updateFilter(_name, _value) ) {
       // Сброс отображения карточек перед закрузкой по фильтру
       this.dataTotalCount = -1;
       this.dataKartochkas = [];
@@ -78,9 +79,9 @@ export class CatalogKartochekComponent implements OnInit {
   }
 
   loadDataKartochkas(): void {
-    Kartochki.loadData((_data:TDataKartochkas)=>{
+    this.kartochki.loadData((_data:TDataKartochkas)=>{
       if(_data) {
-        this.filters = Kartochki.filters;
+        this.filters = this.kartochki.filters;
         this.dataKartochkas = _data.dataKartochkas;
         this.dataTotalCount = _data.dataTotalCount;
         this.dataNumeraciya = _data.dataNumeraciya;
@@ -117,14 +118,14 @@ export class CatalogKartochekComponent implements OnInit {
 
   ngOnInit(): void {
 
-    Authors.loadData((_data:TDataAuthors)=>{
+    this.authors.loadData((_data:TDataAuthors)=>{
       if(_data) {
         this.dataAuthors = _data.dataAuthors;
         this.setAuthorsLocations();
       }
     });
 
-    Locations.loadData((_data:TDataLocations)=>{
+    this.locations.loadData((_data:TDataLocations)=>{
       if(_data) {
         this.dataLocations = _data.dataLocations;
         this.setAuthorsLocations();
@@ -135,7 +136,11 @@ export class CatalogKartochekComponent implements OnInit {
 
   }
 
-  constructor() {
+  constructor(
+     private authors: AuthorsService,
+     private locations: LocationsService,
+     private kartochki: KartochkiService
+  ){
     this.updateFilter = this.updateFilter.bind(this);
   }
 

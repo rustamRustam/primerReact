@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { TKartochka } from '../store/Kartochki';
+import { TKartochka } from '../store/kartochki.service';
 
 @Component({
   selector: 'app-vitrina',
