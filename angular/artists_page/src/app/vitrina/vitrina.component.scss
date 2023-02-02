@@ -1,11 +1,40 @@
 .container-Vitrina {
   min-width: 100%;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 16px;
 
   app-kartocheka {
-    margin: 4px;
+    margin: 8px;
     display: inline-block;
+  }
+
+}
+
+.text-empty {
+  margin: 16px 0;
+  display: inline-block;
+  color:black;
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 8px;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container-Vitrina {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-Vitrina {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

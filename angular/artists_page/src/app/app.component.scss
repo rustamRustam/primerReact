@@ -1,11 +1,14 @@
 .container-header {
   position: relative;
-  background-color: #1976d2;
+  background-color: #6610f2;
   color: white;
-  text-align: right;
   padding: 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e2e2e2;
+  // border-bottom: 1px solid #e2e2e2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   .tema-sun {
     line-height: 1;
