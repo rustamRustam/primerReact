@@ -7,12 +7,12 @@ import {
   TFilters,
   TKeyFilters,
   TValueFilters
-} from '../store/kartochki.service';
-import { AuthorsService, TDataAuthors, TAuthor } from '../store/authors.service';
-import { LocationsService, TDataLocations, TLocation } from '../store/locations.service';
+} from '../../services/kartochki.service';
+import { AuthorsService, TDataAuthors, TAuthor } from '../../services/authors.service';
+import { LocationsService, TDataLocations, TLocation } from '../../services/locations.service';
 
-import { TNumeraciya } from '../numeraciya/numeraciya.component';
-import { TSelectItem, TSelectItems } from '../select/select.component';
+import { TNumeraciya } from '../../ui/numeraciya/numeraciya.component';
+import { TSelectItem, TSelectItems } from '../../ui/select/select.component';
 
 @Component({
   selector: 'app-catalog-kartochek',

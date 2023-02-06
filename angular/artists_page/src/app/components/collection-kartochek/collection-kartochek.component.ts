@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TKartochka } from '../store/kartochki.service';
+import { TKartochka } from '../../services/kartochki.service';
 
-import { CollectionService } from '../store/collection.service';
+import { CollectionService } from '../../services/collection.service';
 
 @Component({
   selector: 'app-collection-kartochek',

@@ -1,18 +1,15 @@
 
 .container-Kartochka {
+  display: inline-block;
   max-width: 280px;
   position: relative;
-
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 8px;
-
   background-color: #fff;
   padding: 10px 8px;
-  box-shadow: rgba(41,72,0,.07) 0px 6px 30px;
-
+  box-shadow: rgba(41,72,0,.7) 0px 6px 30px;
   height: 100%;
-
   &:hover {
     cursor: pointer;
   }

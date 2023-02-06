@@ -1,18 +1,13 @@
 .container-Vitrina {
   min-width: 100%;
-
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
+  justify-content: space-around;
   box-sizing: border-box;
-  padding: 16px;
-
   app-kartocheka {
     margin: 8px;
     display: inline-block;
   }
-
 }
 
 .text-empty {

@@ -5,7 +5,6 @@
 
 .filters {
   display: block;
-  margin: 10px;
   box-sizing: border-box;
   border-radius: 8px;
   background-color: #fff;
@@ -16,7 +15,6 @@
     display: inline-block;
     margin: 10px;
     vertical-align: middle;
-    /*width: calc(25% - 24px);*/
     width: calc(33% - 24px);
     div {
       width: 100% !important;

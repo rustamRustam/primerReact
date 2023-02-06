@@ -1,9 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 
-import { KartochkiService, TKartochka } from '../store/kartochki.service';
-import { AuthorsService, TAuthor } from '../store/authors.service';
-import { LocationsService } from '../store/locations.service';
+import { KartochkiService, TKartochka } from '../../services/kartochki.service';
+import { AuthorsService, TAuthor } from '../../services/authors.service';
+import { LocationsService } from '../../services/locations.service';
 
 @Component({
   selector: 'app-kartocheka-view',

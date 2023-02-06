@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { TAuthor } from '../store/authors.service';
-import { TLocation } from '../store/locations.service';
-import { TUpdateFilter, TKeyFilters } from '../store/kartochki.service';
+import { TAuthor } from '../../services/authors.service';
+import { TLocation } from '../../services/locations.service';
+import { TUpdateFilter, TKeyFilters } from '../../services/kartochki.service';
 
 export type TSelectItem = {
   id: number;
